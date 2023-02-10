@@ -36,6 +36,7 @@
                 "$type": "EditorEntitySortComponent",
                 "Id": 14126657869720434043,
                 "Child Entity Order": [
+                    "Entity_[4553088326524]",
                     "Entity_[1176639161715]",
                     "Entity_[104676312987105]",
                     "Entity_[1090499316769908]",
@@ -2733,6 +2734,98 @@
                 }
             }
         },
+        "Entity_[4540203424636]": {
+            "Id": "Entity_[4540203424636]",
+            "Name": "CameraLeft",
+            "Components": {
+                "Component_[14820797619469231137]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 14820797619469231137
+                },
+                "Component_[16474570728604692853]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 16474570728604692853
+                },
+                "Component_[16828671760908596593]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 16828671760908596593
+                },
+                "Component_[1844752162361035072]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 1844752162361035072
+                },
+                "Component_[1888486144527432385]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 1888486144527432385
+                },
+                "Component_[3144087883015607981]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 3144087883015607981
+                },
+                "Component_[3262941049441395938]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 3262941049441395938,
+                    "Parent Entity": "Entity_[4553088326524]",
+                    "Transform Data": {
+                        "Translate": [
+                            2.384185791015625e-7,
+                            0.05000000074505806,
+                            -1.1920928955078125e-7
+                        ],
+                        "Rotate": [
+                            -89.99994659423828,
+                            89.99994659423828,
+                            0.0
+                        ]
+                    }
+                },
+                "Component_[3939174516121333290]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 3939174516121333290
+                },
+                "Component_[4365770021526335156]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 4365770021526335156,
+                    "m_template": {
+                        "$type": "ROS2FrameComponent",
+                        "Namespace Configuration": {
+                            "Namespace Strategy": 2
+                        }
+                    }
+                },
+                "Component_[7079270640020415958]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 7079270640020415958
+                },
+                "Component_[7619883929982153667]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 7619883929982153667,
+                    "m_template": {
+                        "$type": "ROS2CameraSensorComponent",
+                        "SensorConfiguration": {
+                            "Frequency (HZ)": 1.0,
+                            "Publishers": {
+                                "Camera Info": {
+                                    "Type": "sensor_msgs::msg::CameraInfo",
+                                    "Topic": "camera_info"
+                                },
+                                "Color Image": {
+                                    "Type": "sensor_msgs::msg::Image",
+                                    "Topic": "camera_image_color"
+                                },
+                                "Depth Image": {
+                                    "Type": "sensor_msgs::msg::Image",
+                                    "Topic": "camera_image_depth"
+                                }
+                            }
+                        },
+                        "Width": 1920,
+                        "Height": 1080,
+                        "Depth": false
+                    }
+                }
+            }
+        },
         "Entity_[4545874125731]": {
             "Id": "Entity_[4545874125731]",
             "Name": "GatherPoint10",
@@ -2785,6 +2878,157 @@
                 "Component_[9935025774700671265]": {
                     "$type": "EditorVisibilityComponent",
                     "Id": 9935025774700671265
+                }
+            }
+        },
+        "Entity_[4553088326524]": {
+            "Id": "Entity_[4553088326524]",
+            "Name": "Stereo",
+            "Components": {
+                "Component_[12578937818981692277]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 12578937818981692277
+                },
+                "Component_[15380041550531264411]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 15380041550531264411
+                },
+                "Component_[16619578645047277047]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 16619578645047277047,
+                    "Child Entity Order": [
+                        "Entity_[4540203424636]",
+                        "Entity_[4557383293820]"
+                    ]
+                },
+                "Component_[3507834268363930950]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 3507834268363930950
+                },
+                "Component_[6218308278969710124]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 6218308278969710124,
+                    "Parent Entity": "Entity_[1146574390643]",
+                    "Transform Data": {
+                        "Translate": [
+                            0.026238441467285156,
+                            41.298038482666016,
+                            0.0
+                        ],
+                        "Rotate": [
+                            180.0,
+                            -73.90925598144531,
+                            180.0
+                        ]
+                    }
+                },
+                "Component_[7358034460005229034]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 7358034460005229034
+                },
+                "Component_[7812126216027121001]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 7812126216027121001
+                },
+                "Component_[8844836559639964752]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 8844836559639964752
+                },
+                "Component_[9876156182320634750]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 9876156182320634750
+                }
+            }
+        },
+        "Entity_[4557383293820]": {
+            "Id": "Entity_[4557383293820]",
+            "Name": "CameraRight",
+            "Components": {
+                "Component_[11291687166624314348]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 11291687166624314348
+                },
+                "Component_[13367713843270500286]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 13367713843270500286
+                },
+                "Component_[1411135100448263384]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 1411135100448263384
+                },
+                "Component_[14350909291754505715]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 14350909291754505715,
+                    "m_template": {
+                        "$type": "ROS2FrameComponent",
+                        "Namespace Configuration": {
+                            "Namespace Strategy": 2
+                        }
+                    }
+                },
+                "Component_[16165828111990722219]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 16165828111990722219
+                },
+                "Component_[16548803536968191565]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 16548803536968191565
+                },
+                "Component_[17987452933823760571]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 17987452933823760571,
+                    "Parent Entity": "Entity_[4553088326524]",
+                    "Transform Data": {
+                        "Translate": [
+                            0.0,
+                            -0.05000000074505806,
+                            0.0
+                        ],
+                        "Rotate": [
+                            0.0,
+                            90.0,
+                            -90.0
+                        ]
+                    }
+                },
+                "Component_[3475474526057244719]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 3475474526057244719
+                },
+                "Component_[6202450188115177427]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 6202450188115177427,
+                    "m_template": {
+                        "$type": "ROS2CameraSensorComponent",
+                        "SensorConfiguration": {
+                            "Frequency (HZ)": 1.0,
+                            "Publishers": {
+                                "Camera Info": {
+                                    "Type": "sensor_msgs::msg::CameraInfo",
+                                    "Topic": "camera_info"
+                                },
+                                "Color Image": {
+                                    "Type": "sensor_msgs::msg::Image",
+                                    "Topic": "camera_image_color"
+                                },
+                                "Depth Image": {
+                                    "Type": "sensor_msgs::msg::Image",
+                                    "Topic": "camera_image_depth"
+                                }
+                            }
+                        },
+                        "Width": 1920,
+                        "Height": 1080,
+                        "Depth": false
+                    }
+                },
+                "Component_[7951512781170822808]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 7951512781170822808
+                },
+                "Component_[850151914253243242]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 850151914253243242
                 }
             }
         },
